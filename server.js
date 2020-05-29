@@ -17,15 +17,15 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-if (process.env.NODE_ENV === 'production'){
-    const publicDirectory = path.join(__dirname, './client')
+
+    const publicDirectory = path.join(__dirname, './client/index.html')
     app.use(express.static(publicDirectory))
     
     
     app.get('*', (req, res) => {
         res.sendFile(publicDirectory)
     })
-}
+
 
 
 app.listen(port, () => {
