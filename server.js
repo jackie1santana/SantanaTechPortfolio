@@ -4,7 +4,6 @@ const path = require('path')
 
 // require('./../models/firebase')
 
-if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: "./config/.env" })
 
 
 
