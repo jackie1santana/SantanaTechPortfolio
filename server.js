@@ -17,7 +17,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 
-const publicDirectory = path.resolve(__dirname, './client')
+const publicDirectory = path.join(__dirname, './client')
 
 app.use(express.static(publicDirectory))
 
