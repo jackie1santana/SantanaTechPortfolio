@@ -8,7 +8,7 @@ if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: "./c
 
 const app = express()
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT
 
 app.use(cors())
 app.use(express.json())
@@ -20,9 +20,7 @@ const publicDirectory = path.join(__dirname, './client')
 
 app.use(express.static(publicDirectory))
 
-app.get('/', (req, res) => {
-    res.sendFile(publicDirectory)
-})
+
 
 app.listen(port, () => {
     console.log(`server is running on port ${port}`)
