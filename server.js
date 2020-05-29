@@ -4,6 +4,8 @@ const path = require('path')
 
 // require('./../models/firebase')
 
+if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: "./config/.env" })
+
 
 
 
@@ -15,15 +17,16 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
+if (process.env.NODE_ENV === 'production'){
+    const publicDirectory = path.join(__dirname, './client')
+    app.use(express.static(publicDirectory))
+    
+    
+    app.get('*', (req, res) => {
+        res.sendFile(publicDirectory)
+    })
+}
 
-const publicDirectory = path.join(__dirname, './client')
-
-app.use(express.static(publicDirectory))
-
-
-app.get('*', (req, res) => {
-    res.sendFile(publicDirectory)
-})
 
 app.listen(port, () => {
     console.log(`server is running on port ${port}`)
