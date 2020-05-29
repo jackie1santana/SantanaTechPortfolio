@@ -8,7 +8,7 @@ if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: "./c
 
 const app = express()
 
-const port = process.env.PORT
+const port = process.env.PORT || 4000
 
 app.use(cors())
 app.use(express.json())
