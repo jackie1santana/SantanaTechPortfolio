@@ -15,10 +15,13 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 
-app.use(express.static('client'))
+const publicDirectory = path.join(__dirname, './client')
+
+
+app.use(express.static(publicDirectory))
 
 app.get('/', (req, res) => {
-    res.send('hey')
+    res.sendFile(publicDirectory)
 })
 
 app.listen(port, () => {
