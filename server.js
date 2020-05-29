@@ -1,8 +1,10 @@
 const express = require('express')
 const cors = require('cors')
 const path = require('path')
-require('dotenv').config({ path: "./config/.env" })
+
 // require('./../models/firebase')
+
+if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: "./config/.env" })
 
 const app = express()
 
