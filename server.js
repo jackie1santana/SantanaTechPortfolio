@@ -1,12 +1,14 @@
 const express = require('express')
 const cors = require('cors')
 const path = require('path')
-require('dotenv').config({ path: "./config/.env" })
+const dotenv = require('dotenv')
+
+dotenv.config({ path: "./config/.env" })
 // require('./../models/firebase')
 
 const app = express()
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT
 
 app.use(cors())
 app.use(express.json())
