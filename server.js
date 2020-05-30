@@ -2,11 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const path = require('path')
 
-// require('./../models/firebase')
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: "./config/.env" })
-
-
 
 
 const app = express()
@@ -21,11 +18,13 @@ app.use(express.urlencoded({ extended: false }))
     const publicDirectory = path.join(__dirname, './public')
     app.use(express.static(publicDirectory))
     
-    
+    app.use('/form', require('./controllers/router'))
+
     app.get('*', (req, res) => {
         res.sendFile(publicDirectory)
     })
 
+    
 
 
 app.listen(port, () => {
