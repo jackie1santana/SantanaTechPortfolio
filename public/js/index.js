@@ -156,7 +156,7 @@ function submitForm(e) {
   var message = getInputVal("message");
 
   // Send Form to Backend Database
-  fetch("/form", {
+  fetch("http://localhost:4000/form", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
