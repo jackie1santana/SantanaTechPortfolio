@@ -1,0 +1,3 @@
+[submodule "newpublic"]
+	path = newpublic
+	url = git@github.com:jackie1santana/portfolio_firebase.git
