@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <meta charset="UTF-8">
+  <title>Jackie's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Jackie Tristan Santana Software Developer Portfolio" />
+
+  <meta name="keywords" content="Jackie Tristan Santana Software Developer Portfolio HTML5 CSS3 Javascript React Node.js Tech Resume jQuery Elon Musk Chris Sean team treehouse udemy joshua fluke freecodecamp" />
+
+  <meta http-equiv="author" content="Jackie Tristan Santana" />
+
+
+<!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!--github version of font awesome-->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel='stylesheet' href='https://www.w3schools.com/lib/w3.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+ 
+  
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Indie+Flower|Nanum+Pen+Script" rel="stylesheet">
+
+
+ 
+  <link rel="stylesheet" href="css/style.css">
+
+<!--MapTiler API-->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+ 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<style>
+  #map { 
+    height: 360px; 
+    width: 300px;
+    
+    
+  }
+</style>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138503300-1');
+</script>
+
+
+
+
+
+<body>
+
+
+      
+
+   
+        <!-- Content here -->
+     
+  <!-- Navbar (sit on top) -->
+  <div  class="w3-top">
+      
+    <ul class="w3-navbar" id="myNavbar">
+        
+      <li><a href="#" class="w3-padding-large animated lightSpeedIn delay-1s" id="success">Success Comes From Burning Desire...<i class="fab fa-gripfire animated infinite heartBeat" style="font-size:20px;"></i></a></li>
+    
+      
+      <!--Audio Player-->
+      <audio id="player" controls loop>
+        <source src="Pastel.mp3" type="audio/mp3">
+    </audio>
+
+        <!-- <iframe src="silence.mp3" id="audio" style="display:none"></iframe> -->
+       
+      <li class="w3-hide-small w3-right">
+        <a href="#contact" class="w3-padding-large">Contact</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#portfolio" class="w3-padding-large">Portfolio</a>
+      </li>
+      <li class="w3-hide-small w3-right">
+        <a href="#about" class="w3-padding-large">About</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- First Parallax Image with Logo Text -->
+  
+  <div class="bgimg-1 w3-opacity w3-display-container">
+    
+    
+
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <h1 class="title-name animated bounceInDown delay-2s w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="first-name">JACKIE </span> <span class="w3-hide-small last-name">SANTANA</span></h1>
+       <!--Loader-->
+
+  <div class="loader"></div>
+  ​<p id="word">Loading..</p>
+    </div>
+    
+  </div>
+
+ 
+ 
+
+  <!-- Container (About Section) -->
+  <div class="container">
+  <div id="about">
+    
+        <h2 class="w3-center"><span id="a">A</span><span id="b">B</span><span id="o">O</span><span id="u">U</span><span id="t">T</span> <span id="m">M</span><span id="e">E</span></h2>
+       
+    <h5 class="w3-center">Hello, my name is Jackie Santana. I’m a fullstack software developer as well as an ambitious individual who is vehemently
+        passionate about software engineering, front-end, back-end and everything else relative to technological culture.</h5>
+    <!--  Profile Picture and Description  -->
+    <div class="w3-row">
+      <figure>
+        <img src="./img/virtualreality.jpg" style="opacity: 0.7" id="profile" class="w3-circle" alt="Photo of Me">
+
+        
+      <!-- Hide this text on small devices -->
+          <figcaption>
+       <p id="about-text"><em>"My love for coding was inspired by my passion for learning new things. As a kid I’ve always observed things differently and always looked at
+          life as an opportunity to learn and experience, innovate in ways to help others. 
+         The reason why I chose to learn code is because it is a euphoric feeling knowing that you can create something from literally nothing. When I create, 
+         I feel like I’m the most powerful person in the world. I love when I stumble upon a task to be quite challenging and difficult to figure out because situations like that keeps
+          my brain sharp and only makes me stronger. I just look at coding like one huge puzzle, just putting the pieces together until they all fit"</em>
+          <br><em>- Jackie Tristan Santana</em></p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+ 
+
+
+
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container" id="portfolio">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+
+
+
+  <!-- Container (Portfolio Section) -->
+  
+  <div class="w3-content w3-container w3-padding-64">
+
+
+    <!-- Technical Toolbox -->
+
+    <h2 id="toolbox">Technical Toolbox  &nbsp; <i class="fas fa-tools"></i></h2>
+    <p class="w3-center"><em>Languages</em></p>
+   
+    <hr>
+<div class="container row bg-light">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title d-flex justify-content-center"><b>Front End</b></h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">HTML <i class="fab fa-html5 fa-1x"></i></li>
+          <li class="list-group-item">CSS <i class="fab fa-css3-alt"></i></li>
+          <li class="list-group-item">Bootstrap <i class="fab fa-bootstrap"></i></li>
+          <li class="list-group-item">Sass <i class="fab fa-sass"></i></li>
+          <li class="list-group-item">JavaScript <i class="fab fa-js"></i></li>
+          <li class="list-group-item">TypeScript</li>
+          <li class="list-group-item">React <i class="fab fa-react"></i></li>
+          <li class="list-group-item">Angular <i class="fab fa-angular"></i></li>
+          <li class="list-group-item">Vue.js <i class="fab fa-vuejs"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title d-flex justify-content-center"><b>Back End</b></h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Node.js <i class="fab fa-node-js"></i></li>
+          <li class="list-group-item">Express.js</li>
+          <li class="list-group-item">REST Api</li>
+          <li class="list-group-item">GraphQL <i class="fas fa-rocket"></i></li>
+          <li class="list-group-item">MongoDB</li>
+          <li class="list-group-item">MySQL</li>
+          <li class="list-group-item">FireBase <i class="fas fa-fire-alt"></i></li>
+          <li class="list-group-item">Python <i class="fab fa-python"></i></li>
+          <li class="list-group-item">Django</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!------>
+<hr>
+
+<!-- Projects -->
+    <h2 style="margin-top:50px;" class="w3-center">MY WORK</h2>
+    <br>
+    <p class="w3-center"><em>Here are some of my latest projects</em></p>
+  </div>
+  <!-- Responsive Grid. Two columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="container-fluid">
+
+  <div class="card-group">
+      <div class="card">
+          <a href="https://jackie1santana.github.io/socialpro/" target="_blank">
+            <div class="w3-hover-opacity">
+        <img src="./img/port3.jpg" class="card-img-top" alt="Industry"></a></div>
+        <div class="card-body">
+          <h5 class="card-title font2">SocialPro <br>
+  
+  
+            <a href="https://jackie1santana.github.io/socialpro/" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Site</button></a> 
+  
+              <a href="https://github.com/jackie1santana/socialpro" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Code</button></a>
+              
+              <span style="color:rgb(28, 41, 161)"><br><br> UX/UI Design</span></h5>
+          <p class="card-text">SocialPro is an online platform which people use to build social networks or social relationship with other people who share similar personal or career interests, activities, backgrounds or real-life connections.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved </small>
+        </div>
+      </div>
+
+
+      <div class="card">
+          <a href="https://jackie1santana.github.io/steak-house/" target="_blank">
+          <div class="w3-hover-opacity">
+          <img src="img/steak.jpg" class="card-img-top" alt="Steak House"></a></div>
+          <div class="card-body">
+            <h5 class="card-title font2">Steak House <br>
+    
+    
+              <a href="https://jackie1santana.github.io/steak-house/" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Site</button></a>
+    
+                <a href="https://github.com/jackie1santana/steak-house" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Code</button></a>
+                
+                <span style="color:rgb(28, 41, 161)"><br><br>UX/UI Design</span></h5>
+            <p class="card-text">Today, Steak House family of 900+ restaurants is evolving the brand with our customers' favorites in mind. With reinvigorated dishes, a refreshed website, a restructured logo, and remodeling of select restaurants, we aim to make every guest experience feel more like modern Italy..</p>
+          </div>
+          <div class="card-footer">
+              <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved</small>
+          </div>
+        </div>
+
+
+      <div class="card"> <a href="https://jackie1santana.github.io/travel-light/" target="_blank">
+        <div class="w3-hover-opacity">
+        <img src="./img/travel1.jpg" class="card-img-top" alt="Travel Light"></a></div>
+        <div class="card-body">
+          <h5 class="card-title font2">Travel Light <br>
+  
+  
+            <a href="https://jackie1santana.github.io/travel-light/" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Site</button></a> 
+  
+              <a href="https://github.com/jackie1santana/travel-light" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Code</button></a>
+              
+              <span style="color:rgb(28, 41, 161)"><br><br>UX/UI Design</span></h5>
+          <p class="card-text">Here at Travel Light, we believe that fulfilling travel experiences begin not only with choosing the right destination, but having the right state of mind.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Copyright &copy; 2019 All Rights Reserved </small>
+        </div>
+      </div>
+  
+
+
+   
+    
+    
+
+   
+  </div>
+
+ 
+
+  <div class="card-group">
+      <div class="card">
+          <a href="https://jackie1santana.github.io/apparelco/" target="_blank">
+            <div class="w3-hover-opacity">
+        <img src="" class="card-img-top" alt="Apparel & Co. Website"></a></div>
+        <div class="card-body">
+          <h5 class="card-title font2">Apparel & Co. <br>
+  
+  
+            <a href="https://jackie1santana.github.io/apparelco/" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Site</button></a>
+  
+              <a href="https://github.com/jackie1santana/apparelco" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Code</button></a>
+              
+              <span style="color:rgb(28, 41, 161)"><br><br>HTML5 & CSS3</span></h5>
+          <p class="card-text">Apparel & Co. is the style source for fashion-forward young women and men, for everything from first job interviews to weekend parties. We believe in living for the moment, dressing for the moment and having a strong individual style.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved </small>
+        </div>
+      </div>
+
+      <div class="card">
+          <a href="https://peacelovemotivation.com" target="_blank">
+            <div class="w3-hover-opacity">
+              
+        <img src="" class="card-img-top" alt="Peace Love & Motivation"></a></div>
+        <div class="card-body">
+          <h5 class="card-title font2">Peace Love & Motivation <br>
+    
+    
+            <a href="https://peace.netlify.com" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Site</button></a> 
+    
+              <a href="https://github.com/jackie1santana/peace-original" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Code</button></a>
+              
+              <span style="color:rgb(28, 41, 161)"><br><br>HTML5 & CSS3</span></h5>
+          <p class="card-text">Inspirational quotes and motivational sayings have an amazing ability to change the way we feel about life. This is why I find them so interesting and crucial on our paths to success.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved</small>
+        </div>
+      </div>
+      
+      
+      
+      <div class="card">
+          <a href="https://jackie1santana.github.io/ScoreTracker/" target="_blank">
+            <div class="w3-hover-opacity">
+        <img src="img/score.jpg" class="card-img-top" alt="Score Tracker"></a></div>
+        <div class="card-body">
+          <h5 class="card-title font2">Score Tracker <br>
+  
+  
+            <a href="https://jackie1santana.github.io/ScoreTracker/" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Site</button></a>
+  
+              <a href="https://github.com/jackie1santana/ScoreTracker" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Code</button></a>
+              
+              <span style="color:rgb(28, 41, 161)"><br><br>Javascript & jQuery</span></h5>
+          <p class="card-text">Score Tracker is a 2-Player scorekeeper and leaderboard app. To get started simply enter a number you'd like to play up to. Select 'Player 1' or 'Player 2' to add a point.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Copyright &copy; 2019 All Rights Reserved </small>
+        </div>
+      </div>
+
+
+    
+
+
+    
+  </div>
+
+  
+
+
+
+  <div class="card-group">
+      <div class="card">
+          <a href="https://jackie1santana.github.io/Todo-list/" target="_blank">
+            <div class="w3-hover-opacity">
+        <img src="img/todo1.jpg" class="card-img-top" alt="ToDo List"></a></div>
+        <div class="card-body">
+          <h5 class="card-title font2">To-Do List <br>
+  
+  
+            <a href="https://jackie1santana.github.io/Todo-list/" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Site</button></a> 
+  
+              <a href="https://github.com/jackie1santana/Todo-list" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Code</button></a>
+              
+              <span style="color:rgb(28, 41, 161)"><br><br>Javascript & jQuery</span></h5>
+          <p class="card-text">We have a lot of choices to help us keep track of daily obligations. A simple list on paper of things “To Do” is enough for some people.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved</small>
+        </div>
+      </div>
+
+      <div class="card"> <a href="https://pokedexgame.netlify.com/" target="_blank">
+        <div class="w3-hover-opacity">
+        <img src="" class="card-img-top" alt="Pokedex"></a></div>
+        <div class="card-body">
+          <h5 class="card-title font2">Pokedex <br>
+  
+  
+            <a href="https://pokedexgame.netlify.com/" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Site</button></a>
+  
+            <a href="https://github.com/jackie1santana/Pokedex/tree/master/src" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Code</button></a>
+            
+            <span style="color:rgb(28, 41, 161)"><br><br>React</span></h5>
+          <p class="card-text">The Pokedex creature has an array of stats. On the main list pages you can see the various stats of each Pokemon.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Copyright &copy; 2019 All Rights Reserved </small>
+        </div>
+      </div>
+  
+    
+
+    <div class="card">
+      <a href="https://tapalot.netlify.com/" target="_blank">
+      <div class="w3-hover-opacity">
+      <img src="img/patatap.jpeg" class="card-img-top" alt="Tap game"></a></div>
+      <div class="card-body">
+        <h5 class="card-title font2">Tap Game <br>
+
+
+          <a href="https://tapalot.netlify.com/" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Site</button></a>
+
+            <a href="https://github.com/jackie1santana/Tap-Game" target="_blank"><button style ="font-size:19px; font-family:'helvetica';" type="button" class="btn btn-outline-danger">View Code</button></a>
+            <span style="color:rgb(28, 41, 161)"><br><br>Javascript, Paper.js & Howler.js</span></h5>
+        <p class="card-text">Tap Any Key to Make a Beat!<br> <em>(Not Acceptable to Mobile Device)</em></p>
+      </div>
+      <div class="card-footer">
+          <small class="text-muted"> Copyright &copy; 2019 All Rights Reserved</small>
+      </div>
+    </div>
+
+    
+
+    
+  </div>
+
+  
+   
+</div>
+
+
+
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright"></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" style="max-width:100%">
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container" id="contact">
+    <div class="w3-display-middle">
+      <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
+    </div>
+  </div>
+
+
+
+
+  <!--Resume & Cover-->
+<br>
+  <div class="dropdown" style="text-align: center;">
+    <button class="btn btn-outline-info dropdown-toggle" style="font-size: 120%;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Check Out My Resume 
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="./documents/JSCover2019.pdf" download="Jackie Cover Letter">Jackie's Passionate Cover Letter <span style="color: hotpink;">❤</span></a>
+      <a class="dropdown-item" href="./documents/JackieDevResume.PDF" download="Jackie Resume">Jackie's Developer Resume <i class="fas fa-cloud-sun" style="color:coral;"></i></a>
+    </div>
+  </div>
+
+
+
+  <!-- Container (Contact Section) -->
+ 
+  <div class="w3-content w3-container w3-padding-64">
+    
+    <p class="w3-center"><strong><em>I'd love your feedback!</em></strong></p>
+
+    <address class="w3-row w3-padding-32 w3-section">
+
+
+      <div class="w3-col m4 w3-container"> 
+        <div style="position:relative; z-index:0;" id="map" class="w3-round-large"></div>
+        
+        <script>
+          var map = L.map('map').setView([29.7604, -95.3698], 5);
+          L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=S3T2VrAiu6LIVzHSShQn',{
+            tileSize: 512, 
+            zoomOffset: -1,
+            minZoom: 9,
+            attribution: '<a href="#" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank"></a>',
+            crossOrigin: true
+          }).addTo(map);
+          var marker = L.marker([29.7604, -95.3698]).addTo(map);
+        </script>
+        
+ </div>
+      
+  
+    
+
+      <div class="w3-col m8 w3-container w3-section">
+        <div class="w3-large w3-margin-bottom">
+
+
+<!--firebase message sent message-->
+<div class="alert">
+Your message has been sent!
+</div>
+
+          <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i>Houston, Texas<br>
+          <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: (646)-618-9092<br>
+          <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: JackieTristanSantana@Gmail.com<br>
+        </div>
+              <p>Swing by for a cup of coffee, or leave me a note:</p>
+<!--Netlify Sub-->
+<section>
+  
+    <div class="content">
+        <!--Name-->
+      <form id ="contactForm">
+        <div class="fields">
+          <div class="field half">
+            <input type="text" name="name" id="name" placeholder="Name" required/>
+          </div>
+          </div>
+        
+          <!--Email-->
+          <div class="field half">
+            <input type="email" name="email" id="email" placeholder="Email" required/>
+          </div>
+         
+           <br>
+
+          <!--Message-->
+          <div class="field">
+            <textarea name="message" id="message" placeholder="Leave a Comment.." rows="7"></textarea>
+          </div>
+
+          
+
+          <!--spam filter recaptcha-->
+          <div class="field">
+           <div data-netlify-recaptcha="true"></div>
+          </div>
+       
+          <!--Button-->
+      
+        <ul class="actions">
+        
+          <p>
+            <li><button type="submit" class="btn btn-outline-info">Send Message</button></li>
+          </p>
+        </ul>
+      </form>
+    </div>
+   
+  </section>
+        
+
+    </address>
+  
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf" class="footer">
+
+    <div class="w3-half">
+      <a target="_blank" href="https://github.com/jackie1santana">
+        <i class="fa fa-github fa-2x"></i>Github
+      </a>
+
+      <a target="_blank" href="https://www.linkedin.com/in/jackie-santana-0b36b0143/">
+        <i class="fa fa-linkedin-square fa-2x"></i>LinkedIn
+      </a>
+    </div>
+
+    <div>
+      <p class="w3-center-align">Made with <span class="heart-icon">❤</span> by Jackie Santana <br>  Copyright &copy; 2020 All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+
+  <script src="/js/index.js"></script>
+ 
+ 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script>
+
+ 
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

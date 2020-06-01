@@ -1,0 +1,27 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "This is a portfolio by Jackie Santana",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackie1santana/portfolio_firebase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackie1santana/portfolio_firebase/issues"
+  },
+  "homepage": "https://github.com/jackie1santana/portfolio_firebase#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "proxy": "http://localhost:4000",
+  "devDependencies": {
+    "parcel": "^2.0.0-alpha.3.2"
+  }
+}
