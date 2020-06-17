@@ -42,7 +42,7 @@ html {
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
-  opacity: 0.75;
+  opacity: 9;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
