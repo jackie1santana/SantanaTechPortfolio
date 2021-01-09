@@ -3,20 +3,25 @@ const cors = require('cors')
 const path = require('path')
 
 
-if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: "./config/.env" })
 
-// if(process.env.NODE_ENV === 'production') {
-//   app.use((req, res, next) => {
-//     if (req.header('x-forwarded-proto') !== 'https')
-//       res.redirect(`https://${req.header('host')}${req.url}`)
-//     else
-//       next()
-//   })
-// }
 
 const app = express()
 
 const port = process.env.PORT
+
+if (process.env.NODE_ENV !== 'production'){
+    require('dotenv').config({ path: "./config/.env" })
+}else {
+    app.use((req, res, next) => {
+        if (req.header('x-forwarded-proto') !== 'https')
+          res.redirect(`https://${req.header('host')}${req.url}`)
+        else
+          next()
+      })
+}
+
+
+
 
 app.use(cors())
 app.use(express.json())
