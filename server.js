@@ -5,6 +5,14 @@ const path = require('path')
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config({ path: "./config/.env" })
 
+if(process.env.NODE_ENV === 'production') {
+  app.use((req, res, next) => {
+    if (req.header('x-forwarded-proto') !== 'https')
+      res.redirect(`https://${req.header('host')}${req.url}`)
+    else
+      next()
+  })
+}
 
 const app = express()
 
