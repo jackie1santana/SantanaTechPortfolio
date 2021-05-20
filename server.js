@@ -1,13 +1,13 @@
 const express = require('express')
 const cors = require('cors')
 const path = require('path')
-
+require('dotenv').config({ path: "./config/.env" })
 
 
 
 const app = express()
 
-const port = process.env.PORT
+const port = process.env.PORT 
 
 if (process.env.NODE_ENV !== 'production'){
     require('dotenv').config({ path: "./config/.env" })
@@ -28,7 +28,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 
-    const publicDirectory = path.join(__dirname, './public')
+    const publicDirectory = path.join(__dirname, './client/public')
     app.use(express.static(publicDirectory))
     
     app.use('/form', require('./controllers/router'))

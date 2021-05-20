@@ -190,12 +190,3 @@ function submitForm(e) {
 function getInputVal(id) {
   return document.getElementById(id).value;
 }
-
-new hoverEffect({
-  parent: document.querySelector('.distortion'),
-  intensity: 0.2,
-  image1: './img/virtualreality.jpg',
-  image2: './img/tech.jpg',
-  angle: Math.PI / 3,
-  displacementImage: './img/diss.png'
-})
