@@ -1,1 +1,10 @@
 add favicon svg
+add circle ci
+add more technologies i learned
+- docker
+- aws / vps
+- linux
+- continious integration
+- check if firebase is still working
+- use morgan
+- fix missing command
