@@ -1,15 +1,3 @@
-add favicon svg
-add circle ci
-add more technologies i learned
-- docker
-- aws / vps
-- linux
-- continious integration
-- check if firebase is still working
-- use morgan
-- fix missing command
-- make 2 pdfs one for chesapeake and one for dallas
-- check page speed 
+
 - add compression to nginx
-- add docker
--edit covid chart
+
