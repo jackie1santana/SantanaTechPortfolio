@@ -73,6 +73,15 @@ html {
   font-size: 20px;
 }
 
+.fa-linux {
+  color: #333333;
+  font-size: 20px;
+}
+
+.fa-docker {
+  color: #384d54;
+  font-size: 20px;
+}
 .fa-sass {
   color: pink;
   font-size: 20px;
@@ -927,4 +936,4 @@ ul.actions.fit.stacked {
   margin-bottom: 10px;
   display: none;
 }
-/*# sourceMappingURL=style.css.map */
+

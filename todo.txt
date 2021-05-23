@@ -8,3 +8,8 @@ add more technologies i learned
 - check if firebase is still working
 - use morgan
 - fix missing command
+- make 2 pdfs one for chesapeake and one for dallas
+- check page speed 
+- add compression to nginx
+- add docker
+-edit covid chart

@@ -6,7 +6,7 @@ const compression = require('compression')
 const morgan = require('morgan')
 
 const app = express();
-app.use(compression())
+
 const port = process.env.PORT;
 
 if (process.env.NODE_ENV !== "production") {
@@ -19,12 +19,18 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
+app.use(compression())
+app.use(morgan('tiny'))
+
+
+ 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 const publicDirectory = path.join(__dirname, "./client/public");
 app.use(express.static(publicDirectory));
+app.use(morgan('combined'))
 
 app.use("/form", require("./controllers/router"));
 
