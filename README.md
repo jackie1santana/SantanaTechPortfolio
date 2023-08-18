@@ -7,7 +7,7 @@ My design philosophy embraces both artistic sensibility and visionary thinking, 
 
 #### Technologies Utilized
 In building the majority of my projects, I leveraged the power of several cutting-edge technologies:
-- **React**: For robust UI development
+- **React | Vue.js**: For robust UI development
 - **Vanilla JavaScript**: Offering flexibility and control
 - **Paper.js**: Bringing vector graphics to life
 - **Howler.js**: Managing sound across web applications
