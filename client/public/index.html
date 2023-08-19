@@ -125,22 +125,33 @@
     
         <h2 class="w3-center"><span id="a">A</span><span id="b">B</span><span id="o">O</span><span id="u">U</span><span id="t">T</span> <span id="m">M</span><span id="e">E</span></h2>
        
-    <h5 class="w3-center">Hello, my name is Jackie Santana. I’m a fullstack software developer as well as an ambitious individual who is vehemently
-        passionate about software engineering, front-end, back-end and everything else relative to technological culture.</h5>
+    <!-- <h5 class="w3-center">Hello, my name is Jackie Santana. I’m a fullstack software developer as well as an ambitious individual who is vehemently
+        passionate about software engineering, front-end, back-end and everything else relative to technological culture.</h5> -->
+
+        <h5 class="w3-center">Hi, I'm Jackie Santana, a Fullstack Software Developer. 
+          With a fervent passion for all aspects of technology—from front-end to back-end—I strive 
+          to innovate and shape the future of the digital landscape.</h5>
+
     <!--  Profile Picture and Description  -->
     <div class="w3-row">
       <figure>
-        <img src="./img/virtualr_opt.jpg" style="opacity: 0.7" id="profile" class="w3-circle" alt="Photo of Me">
+        <img src="./img/virtualr_opt.jpg" style="opacity: 0.7" id="profile" class="w3-circle" alt="Profile photo of Jackie Santana">
 
         
       <!-- Hide this text on small devices -->
           <figcaption>
-       <p id="about-text"><em>"My love for coding was inspired by my passion for learning new things. As a kid I’ve always observed things differently and always looked at
-          life as an opportunity to learn and experience, innovate in ways to help others. 
-         The reason why I chose to learn code is because it is a euphoric feeling knowing that you can create something from literally nothing. When I create, 
-         I feel like I’m the most powerful person in the world. I love when I stumble upon a task to be quite challenging and difficult to figure out because situations like that keeps
-          my brain sharp and only makes me stronger. I just look at coding like one huge puzzle, just putting the pieces together until they all fit"</em>
-          <br><em>- Jackie Tristan Santana</em></p>
+            <blockquote id="about-text">
+              <!-- <p><em>"Inspired by the joy of learning, I see coding as a way to create something from nothing. 
+                It's a thrilling puzzle that keeps me sharp, where each challenge makes me stronger. Coding makes me feel empowered, 
+                and I love innovating to help others."</em><br><em>- Jackie Tristan Santana</em></p> -->
+
+                <em>"My love for coding was inspired by my passion for learning new things. As a kid I’ve always observed things differently and always looked at
+                  life as an opportunity to learn and experience, innovate in ways to help others. 
+                 The reason why I chose to learn code is because it is a euphoric feeling knowing that you can create something from literally nothing. When I create, 
+                 I feel like I’m the most powerful person in the world. I love when I stumble upon a task to be quite challenging and difficult to figure out because situations like that keeps
+                  my brain sharp and only makes me stronger. I just look at coding like one huge puzzle, just putting the pieces together until they all fit"</em>
+                  <br><em>- Jackie Tristan Santana</em>
+            </blockquote>
         </figcaption>
       </figure>
     </div>
@@ -496,15 +507,16 @@
         <div style="position:relative; z-index:0;" id="map" class="w3-round-large"></div>
         
         <script>
-          var map = L.map('map').setView([32.7079, -96.9209], 5);
-          L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=S3T2VrAiu6LIVzHSShQn',{
-            tileSize: 512, 
+          var map = L.map('map').setView([32.7079, -97.3365], 5);
+          L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=S3T2VrAiu6LIVzHSShQn', {
+            tileSize: 512,
             zoomOffset: -1,
             minZoom: 9,
             attribution: '<a href="#" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank"></a>',
             crossOrigin: true
           }).addTo(map);
-          var marker = L.marker([32.7079, -96.9209]).addTo(map);
+          var marker = L.marker([32.7079, -97.3365]).addTo(map);
+
         </script>
         
  </div>
@@ -521,7 +533,7 @@
 Thank you, I will get in touch with you shortly!
 </div>
 
-          <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i>Dallas, Texas<br>
+          <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i>Fort Worth, Texas<br>
           <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: (646)-618-9092<br>
           <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: JackieTristanSantana@Gmail.com<br>
         </div>
