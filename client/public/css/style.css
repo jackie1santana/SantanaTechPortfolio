@@ -38,7 +38,8 @@ html {
 /* Create a Parallax Effect */
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {
+.bgimg-3,
+.bgimg-4 {
   opacity: 9;
   background-attachment: fixed;
   background-position: center;
@@ -153,6 +154,14 @@ html {
   z-index: 1;
 }
 
+/* 4th image NPM */
+.bgimg-4 {
+  background-image: url("../img/waves2.jpg");
+  min-height: 400px;
+  z-index: 1;
+  
+}
+
 .w3-wide {
   letter-spacing: 10px;
 }
@@ -165,7 +174,8 @@ html {
 @media only screen and (max-width: 1024px) {
   .bgimg-1,
   .bgimg-2,
-  .bgimg-3 {
+  .bgimg-3,
+  .bgimg-4 {
     background-attachment: scroll;
   }
 }
