@@ -75,7 +75,7 @@
   <!-- Navbar (sit on top) -->
   <div  class="w3-top">
       
-    <ul class="w3-navbar" id="myNavbar">
+    <ul class="w3-navbar" id="myNavbar" role="navigation" aria-label="Main Navigation">
         
       <li><a href="#" class="w3-padding-large animated lightSpeedIn delay-1s" id="success">Success Comes From Burning Desire...<i class="fab fa-gripfire animated infinite heartBeat" style="font-size:20px;"></i></a></li>
     
@@ -476,8 +476,8 @@
       Check Out My Resume 
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="./documents/JSCover2020.pdf" download="Jackie Cover Letter">Jackie's Passionate Cover Letter <span style="color: hotpink;">❤</span></a>
-      <a class="dropdown-item" href="./documents/Jackie_Santana_Res_dallas.pdf" download="Jackie Resume">Jackie's Developer Resume <i class="fas fa-cloud-sun" style="color:coral;"></i></a>
+      <a class="dropdown-item" href="./documents/JackieSantana_cover.pdf" download="Jackie Cover Letter">Jackie's Passionate Cover Letter <span style="color: hotpink;">❤</span></a>
+      <a class="dropdown-item" href="./documents/Jackie_Santana_Resume.pdf" download="Jackie Resume">Jackie's Developer Resume <i class="fas fa-cloud-sun" style="color:coral;"></i></a>
     </div>
   </div>
 
@@ -517,7 +517,7 @@
 
 
 <!--firebase message sent message-->
-<div class="alert">
+<div class="alert" role="alert" aria-live="assertive">
 Thank you, I will get in touch with you shortly!
 </div>
 
@@ -526,8 +526,8 @@ Thank you, I will get in touch with you shortly!
           <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: JackieTristanSantana@Gmail.com<br>
         </div>
               <p>Swing by for a cup of coffee, or leave me a note:</p>
-<!--Netlify Sub-->
-<section>
+<!-- Contact Form -->
+<section id="contact" aria-labelledby="contact-section-label">
   
     <div class="content">
         <!--Name-->
@@ -600,7 +600,7 @@ Thank you, I will get in touch with you shortly!
     </div>
 
     <div>
-      <p class="w3-center-align">Made with <span class="heart-icon">❤</span> by Jackie Santana <br>  Copyright &copy; 2022 All Rights Reserved</p>
+      <p class="w3-center-align">Made with <span class="heart-icon">❤</span> by Jackie Santana <br>  Copyright &copy; <span id="copyright-year"></span> All Rights Reserved</p>
     </div>
   </footer>
 
