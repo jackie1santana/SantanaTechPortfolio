@@ -883,6 +883,13 @@ ul.actions.fit.stacked {
   @media screen and (max-width: 414px) {
  
     visibility: hidden;
+    display: none;
+
+    /* Hide on iOS devices */
+    @supports (-webkit-touch-callout: none) {
+      display: none;
+      visibility: hidden;
+    }
   }
 }
 
