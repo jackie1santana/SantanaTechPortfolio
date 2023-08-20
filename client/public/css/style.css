@@ -10,11 +10,13 @@ h6 {
 
 /*# sourceMappingURL=styles.css.map */
 
+/* Rest of your styles */
+
 body {
   margin: auto;
 
-  @media screen and (max-width: 390px) {
-    width: 34rem;
+  @media screen and (max-width: 414px) {
+    overflow-x: hidden;
 
   }
  
@@ -26,6 +28,7 @@ html {
   color: #777;
   line-height: 1.8;
 }
+
 
 /*Navbar Styles*/
 .w3-navbar {
@@ -244,8 +247,8 @@ i.fa {
 }
 
 body {
-  background-color: #3bb2b8;
-  background: linear-gradient(25deg, #42e695, #422095);
+  /* background-color: #3bb2b8;
+  background: linear-gradient(25deg, #42e695, #422095); */
   background-repeat: no-repeat;
   height: 100vh;
   font-family: "Open Sans", sans-serif;
@@ -263,6 +266,8 @@ body {
   -webkit-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
 }
+
+
 
 .text-center {
   text-align: center;
@@ -353,11 +358,7 @@ body {
   text-align: center;
 }
 
-/*quote at top of page */
-#success {
-  font-size: 17px;
-  font-family: "Indie Flower", cursive;
-}
+
 
 /* fonts on portfolio */
 .font2 {
@@ -883,6 +884,19 @@ ul.actions.fit.stacked {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   border-radius: 7px 7px 7px 7px;
+
+  @media screen and (max-width: 414px) {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #fff; /* You can adjust the background color as needed */
+    z-index: 9999; /* Make sure it's above other content */
+
+    height: 35px;
+    opacity: 0.7;
+  }
 }
 
 #player:hover,
@@ -892,16 +906,22 @@ ul.actions.fit.stacked {
   transform: scale(1.05);
 }
 
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-@media (min-width: 320px) and (max-width: 480px) {
-  #player {
-    height: 35px;
-    opacity: 0.7;
+/*quote at top of page */
+#success {
+  font-size: 17px;
+  font-family: "Indie Flower", cursive;
+
+  @media screen and (max-width: 414px) {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00bcd4; /* You can adjust the background color as needed */
+    z-index: 9999; /* Make sure it's above other content */
   }
 }
+
 
 #word {
   font-size: 18px;
@@ -1007,7 +1027,6 @@ ul.actions.fit.stacked {
   visibility: visible;
   opacity: 1;
 }
-
 .disable-on-hover:hover {
   color: #999;
   border-color: #999;
@@ -1028,7 +1047,7 @@ ul.actions.fit.stacked {
   justify-content: center;
   gap: 2rem;
 
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 414px) {
     flex-direction: column;
     gap: 1rem;
   }
