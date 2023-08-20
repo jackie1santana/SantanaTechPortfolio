@@ -12,6 +12,12 @@ h6 {
 
 body {
   margin: auto;
+
+  @media screen and (max-width: 390px) {
+    width: 34rem;
+
+  }
+ 
 }
 
 body,
@@ -1021,6 +1027,11 @@ ul.actions.fit.stacked {
   display: flex;
   justify-content: center;
   gap: 2rem;
+
+  @media screen and (max-width: 390px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 .npm-card-img-top, .npm-links{
