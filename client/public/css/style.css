@@ -973,6 +973,45 @@ ul.actions.fit.stacked {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 6px 6px rgba(0, 0, 0, 0.1); /* Elevated shadow */
 }
 
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 250px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 100; /* Increase z-index */
+  top: 80px; /* Position above the image */
+  left: 50%;
+  margin-left: -125px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.disable-on-hover:hover {
+  color: #999;
+  border-color: #999;
+  background-color: #f0f0f0;
+  pointer-events: none; /* Prevents interactions such as clicking */
+  cursor: not-allowed; /* Changes the cursor to indicate that the element is not interactive */
+}
+
+
+
 .npm-card-header, .npm-links, .npm-card-img-top-wrapper{
   text-align: center;
   
