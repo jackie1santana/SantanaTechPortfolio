@@ -878,21 +878,20 @@ ul.actions.fit.stacked {
 }
 
 #myNavbar {
-  /* Your regular styles for the navigation bar */
+ 
   
   @media screen and (max-width: 414px) {
-    /* Regular styles for smaller screens */
-    
-    /* Hide on all Safari browsers */
-    @media not all and (min-resolution:.001dpcm) {
-      @supports (-webkit-touch-callout: none) or (-webkit-overflow-scrolling:touch) {
-        display: none;
-        visibility: hidden;
-      }
+ 
+    visibility: hidden;
+    display: none;
+
+    /* Hide on iOS devices */
+    @supports (-webkit-touch-callout: none) {
+      display: none;
+      visibility: hidden;
     }
   }
 }
-
 
 
 #player {
@@ -1048,7 +1047,7 @@ ul.actions.fit.stacked {
   
 }
 
-.npm-links {
+.npm-links{
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -1056,14 +1055,6 @@ ul.actions.fit.stacked {
   @media screen and (max-width: 414px) {
     flex-direction: column;
     gap: 1rem;
-
-    /* Adjust layout for Safari browsers */
-    @media not all and (min-resolution:.001dpcm) {
-      @supports (-webkit-overflow-scrolling: touch) {
-        flex-direction: row;
-        gap: 2rem;
-      }
-    }
   }
 }
 
