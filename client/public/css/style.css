@@ -877,7 +877,7 @@ ul.actions.fit.stacked {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0px 6px 6px rgba(0, 0, 0, 0.1); /* Elevated shadow */
 }
 
-#myNavbar {
+/* #myNavbar {
  
   
   @media screen and (max-width: 414px) {
@@ -885,13 +885,13 @@ ul.actions.fit.stacked {
     visibility: hidden;
     display: none;
 
-    /* Hide on iOS devices */
+ 
     @supports (-webkit-touch-callout: none) {
       display: none;
       visibility: hidden;
     }
   }
-}
+} */
 
 
 #player {
