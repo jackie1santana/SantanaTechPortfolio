@@ -1052,10 +1052,18 @@ ul.actions.fit.stacked {
   justify-content: center;
   gap: 2rem;
 
-  @media screen and (max-width: 414px) {
+  
+}
+
+@media screen and (max-width: 414px) {
+
+  .npm-links{
     flex-direction: column;
-    gap: 1rem;
+  gap: 1rem;
+  
+    
   }
+  
 }
 
 .npm-card-img-top, .npm-links{
