@@ -996,6 +996,19 @@ ul.actions.fit.stacked {
   margin-bottom: 10px;
   display: none;
 }
+/* 
+@media screen and (max-width: 414px) {
+  .alert {
+    text-align: center;
+    padding: 10px;
+    background-color: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+  }
+  
+} */
+
 
 .npm-card {
   width: 80%;
@@ -1062,6 +1075,12 @@ ul.actions.fit.stacked {
   gap: 1rem;
   
     
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   
 }
