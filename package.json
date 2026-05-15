@@ -2,8 +2,8 @@
   "name": "portfolio",
   "version": "1.0.0",
   "engines": {
-    "node": "12.17.x",
-    "npm": "6.x"
+    "node": "16.20.2",
+    "npm": "8.19.4"
   },
   "description": "",
   "main": "server.js",
