@@ -2,9 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "engines": {
-    "node": "16.20.2",
-    "npm": "8.19.4"
-  },
+  "node": ">=22.22.2",
+  "npm": ">=10.9.7"
+  }
   "description": "",
   "main": "server.js",
   "scripts": {
