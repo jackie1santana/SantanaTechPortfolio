@@ -24,6 +24,7 @@ body {
 
 body,
 html {
+  overflow-x: hidden;
   height: 100%;
   color: #777;
   line-height: 1.8;
@@ -392,7 +393,8 @@ form > .fields {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: -2rem 0 2rem -2rem;
-  width: calc(100% + 4rem);
+  width: calc(100% + 2rem);
+  max-width: 100%;
 }
 
 form > .fields > .field {
@@ -426,21 +428,26 @@ form > .fields > .field.quarter {
 
 @media screen and (max-width: 480px) {
   form > .fields {
-    margin: -1.5rem 0 2rem -1.5rem;
-    width: calc(100% + 3rem);
+    margin: 0 0 2rem 0;
+    width: 100%;
+    max-width: 100%;
   }
+
   form > .fields > .field {
-    padding: 1.5rem 0 0 1.5rem;
-    width: calc(100% - 1.5rem);
+    padding: 1.5rem 0 0 0;
+    width: 100%;
   }
+
   form > .fields > .field.half {
-    width: calc(100% - 1.5rem);
+    width: 100%;
   }
+
   form > .fields > .field.third {
-    width: calc(100% - 1.5rem);
+    width: 100%;
   }
+
   form > .fields > .field.quarter {
-    width: calc(100% - 1.5rem);
+    width: 100%;
   }
 }
 
