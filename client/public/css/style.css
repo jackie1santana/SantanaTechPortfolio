@@ -1067,15 +1067,26 @@ ul.actions.fit.stacked {
   
 }
 
-.npm-links{
+.npm-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-
-  
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 100%;
 }
 
-@media screen and (max-width: 414px) {
+.npm-links a {
+  flex: 1 1 160px;
+  max-width: 220px;
+}
+
+.npm-links button {
+  width: 100%;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
 
   .npm-links{
     flex-direction: column;
@@ -1083,7 +1094,11 @@ ul.actions.fit.stacked {
   
     
   }
-
+  .npm-links a {
+    width: 100%;
+    max-width: 100%;
+    flex: unset;
+  }
   .container{
     display: flex;
     flex-direction: column;
